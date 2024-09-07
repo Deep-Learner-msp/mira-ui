@@ -12,7 +12,7 @@ import {
   ChevronRight,
   ChevronDown,
 } from "lucide-react";
-import diversePeople from "./assets/diversePeople1.jpg";
+import diversePeople from "./assets/diversePeople1.png";
 import { useNavigate } from "react-router-dom";
 
 const features = [
