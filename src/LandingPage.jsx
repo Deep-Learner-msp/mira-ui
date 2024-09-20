@@ -313,7 +313,7 @@ export default function LandingPage() {
                 </button>
                 <button
                   onClick={() => {
-                    scrollToSection("sara");
+                    navigate("/sara");
                     setIsMenuOpen(false);
                   }}
                   className="block py-2 text-sm text-gray-300 hover:text-white w-full text-left"
@@ -322,7 +322,7 @@ export default function LandingPage() {
                 </button>
                 <button
                   onClick={() => {
-                    scrollToSection("dheera");
+                    navigate("/dheera");
                     setIsMenuOpen(false);
                   }}
                   className="block py-2 text-sm text-gray-300 hover:text-white w-full text-left"

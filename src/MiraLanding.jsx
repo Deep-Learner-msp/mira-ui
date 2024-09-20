@@ -89,59 +89,61 @@ export default function MiraLanding() {
             />
             <span className="text-2xl font-bold text-pink-500">MIRA</span>
           </motion.div>
-          <div className="hidden md:flex justify-center items-center space-x-6">
+          <div style={{ display: "flex" }}>
             <a
               onClick={() => navigate("voice")}
               className="px-4 py-1 bg-gradient-to-r from-pink-400 to-blue-500 text-white rounded-full text-lg font-semibold hover:from-pink-500 hover:to-blue-600 transition-all duration-300 shadow-lg"
-              style={{ cursor: "pointer" }}
+              style={{ cursor: "pointer", marginRight: "10px" }}
             >
               Experience MIRA
             </a>
-            <motion.a
-              onClick={() => scrollToSection(featuresRef)}
-              style={{ cursor: "pointer" }}
-              className="text-gray-600 hover:text-pink-500 transition-colors"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0 }}
-            >
-              Features
-            </motion.a>
+            <div className="hidden md:flex justify-center items-center space-x-6">
+              <motion.a
+                onClick={() => scrollToSection(featuresRef)}
+                style={{ cursor: "pointer" }}
+                className="text-gray-600 hover:text-pink-500 transition-colors"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0 }}
+              >
+                Features
+              </motion.a>
 
-            <motion.a
-              onClick={() => scrollToSection(howitWorks)}
-              style={{ cursor: "pointer" }}
-              className="text-gray-600 hover:text-pink-500 transition-colors"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              How It Works
-            </motion.a>
+              <motion.a
+                onClick={() => scrollToSection(howitWorks)}
+                style={{ cursor: "pointer" }}
+                className="text-gray-600 hover:text-pink-500 transition-colors"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
+                How It Works
+              </motion.a>
 
-            <motion.a
-              onClick={() => scrollToSection(forEveryone)}
-              style={{ cursor: "pointer" }}
-              className="text-gray-600 hover:text-pink-500 transition-colors"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              For Everyone
-            </motion.a>
+              <motion.a
+                onClick={() => scrollToSection(forEveryone)}
+                style={{ cursor: "pointer" }}
+                className="text-gray-600 hover:text-pink-500 transition-colors"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                For Everyone
+              </motion.a>
 
-            <motion.a
-              onClick={() => {
-                navigate("chat");
-              }}
-              style={{ cursor: "pointer" }}
-              className="text-gray-600 hover:text-pink-500 transition-colors"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              Try MIRA
-            </motion.a>
+              <motion.a
+                onClick={() => {
+                  navigate("chat");
+                }}
+                style={{ cursor: "pointer" }}
+                className="text-gray-600 hover:text-pink-500 transition-colors"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                Try MIRA
+              </motion.a>
+            </div>
           </div>
           <motion.button
             className="md:hidden text-gray-600 hover:text-pink-500 transition-colors"
