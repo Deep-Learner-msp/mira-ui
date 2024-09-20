@@ -93,7 +93,7 @@ export default function MiraLanding() {
             <a
               onClick={() => navigate("voice")}
               className="px-4 py-1 bg-gradient-to-r from-pink-400 to-blue-500 text-white rounded-full text-lg font-semibold hover:from-pink-500 hover:to-blue-600 transition-all duration-300 shadow-lg"
-              style={{ cursor: "pointer", marginRight: "10px" }}
+              style={{ cursor: "pointer", marginRight: "5px" }}
             >
               Experience MIRA
             </a>
@@ -166,17 +166,36 @@ export default function MiraLanding() {
             className="md:hidden bg-white shadow-lg absolute top-16 left-0 right-0 z-40"
           >
             <div className="flex flex-col p-4 space-y-4">
-              {["Features", "How It Works", "For Everyone", "Try MIRA"].map(
-                (item) => (
-                  <a
-                    key={item}
-                    href={`#${item.toLowerCase().replace(" ", "-")}`}
-                    className="text-gray-600 hover:text-pink-500 transition-colors"
-                  >
-                    {item}
-                  </a>
-                )
-              )}
+              <a
+                onClick={() => scrollToSection(featuresRef)}
+                key="Features"
+                className="text-gray-600 hover:text-pink-500 transition-colors"
+              >
+                Features
+              </a>
+              <a
+                onClick={() => scrollToSection(howitWorks)}
+                key="How It Works"
+                className="text-gray-600 hover:text-pink-500 transition-colors"
+              >
+                How It Works
+              </a>
+              <a
+                onClick={() => scrollToSection(forEveryone)}
+                key="For Everyone"
+                className="text-gray-600 hover:text-pink-500 transition-colors"
+              >
+                For Everyone
+              </a>
+              <a
+                onClick={() => {
+                  navigate("chat");
+                }}
+                key="Try MIRA"
+                className="text-gray-600 hover:text-pink-500 transition-colors"
+              >
+                Try MIRA
+              </a>
             </div>
           </motion.div>
         )}
