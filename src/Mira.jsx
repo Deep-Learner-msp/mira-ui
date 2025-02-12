@@ -1,7 +1,7 @@
-import React from 'react';
-import { Button } from 'antd'; // Assuming you're using Ant Design for buttons
-import { ArrowLeftIcon } from 'lucide-react'; // Example icon, replace with your icon or use any other
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { Button } from "antd"; // Assuming you're using Ant Design for buttons
+import { ArrowLeftIcon } from "lucide-react"; // Example icon, replace with your icon or use any other
+import { useNavigate } from "react-router-dom";
 
 const Mira = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const Mira = () => {
   return (
     <div className="relative w-screen h-screen flex items-center justify-center">
       <iframe
-        src="https://mira-aqddfyeca6asehgh.australiacentral-01.azurewebsites.net/" // Replace with the URL you want to display
+        src="http://20.162.18.122:8000/" // Replace with the URL you want to display
         title="Embedded Content"
         className="w-full h-full border-0"
         allowFullScreen
