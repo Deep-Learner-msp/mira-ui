@@ -13,7 +13,7 @@ const Mira = () => {
   return (
     <div className="relative w-screen h-screen flex items-center justify-center">
       <iframe
-        src="http://20.162.18.122:8000/" // Replace with the URL you want to display
+        src="https://20.162.18.122:8000/" // Replace with the URL you want to display
         title="Embedded Content"
         className="w-full h-full border-0"
         allowFullScreen
